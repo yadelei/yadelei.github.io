@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>在MacBook上安装Windows 10双系统 | 亚德雷</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="设备与环境MacBook Pro 13 2017，已安装操作系统macOS Catalina 10.15，准备安装Windows 10 2004。 安装Windows 10下载最新的Windows 10安装镜像文件（.iso）。 在macOS系统下，打开软件启动转换助理（Boot Camp Assistant），选择Windows 10的安装镜像文件，并调整好分区的大小。然后点“安装”，稍等一会儿">
+<meta property="og:type" content="article">
+<meta property="og:title" content="在MacBook上安装Windows 10双系统">
+<meta property="og:url" content="https://yadelei.cn/2020/09/11/install-the-second-os-windows-10-on-macbook/index.html">
+<meta property="og:site_name" content="亚德雷">
+<meta property="og:description" content="设备与环境MacBook Pro 13 2017，已安装操作系统macOS Catalina 10.15，准备安装Windows 10 2004。 安装Windows 10下载最新的Windows 10安装镜像文件（.iso）。 在macOS系统下，打开软件启动转换助理（Boot Camp Assistant），选择Windows 10的安装镜像文件，并调整好分区的大小。然后点“安装”，稍等一会儿">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://yadelei.cn/2020/09/11/install-the-second-os-windows-10-on-macbook/set-default-boot-in-macos.png">
+<meta property="og:image" content="https://yadelei.cn/2020/09/11/install-the-second-os-windows-10-on-macbook/ready-to-remove-windows.png">
+<meta property="og:image" content="https://yadelei.cn/2020/09/11/install-the-second-os-windows-10-on-macbook/removing-windows.png">
+<meta property="og:image" content="https://yadelei.cn/2020/09/11/install-the-second-os-windows-10-on-macbook/windows-has-been-removed.png">
+<meta property="article:published_time" content="2020-09-10T16:10:00.000Z">
+<meta property="article:modified_time" content="2020-09-13T11:32:42.000Z">
+<meta property="article:author" content="亚德雷">
+<meta property="article:tag" content="Mac">
+<meta property="article:tag" content="Windows 10">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://yadelei.cn/2020/09/11/install-the-second-os-windows-10-on-macbook/set-default-boot-in-macos.png">
+  
+    <link rel="alternate" href="/atom.xml" title="亚德雷" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">亚德雷</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">深爱，止礼，赴京，守株。</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS 订阅"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://yadelei.cn"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-install-the-second-os-windows-10-on-macbook" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2020/09/11/install-the-second-os-windows-10-on-macbook/" class="article-date">
+  <time class="dt-published" datetime="2020-09-10T16:10:00.000Z" itemprop="datePublished">2020-09-11</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/">计算机</a>►<a class="article-category-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">操作系统</a>►<a class="article-category-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Windows-10/">Windows 10</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      在MacBook上安装Windows 10双系统
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="设备与环境"><a href="#设备与环境" class="headerlink" title="设备与环境"></a>设备与环境</h2><p>MacBook Pro 13 2017，已安装操作系统macOS Catalina 10.15，准备安装Windows 10 2004。</p>
+<h2 id="安装Windows-10"><a href="#安装Windows-10" class="headerlink" title="安装Windows 10"></a>安装Windows 10</h2><p>下载最新的<a target="_blank" rel="noopener" href="https://win10.ithome.com/win10xiazai">Windows 10安装镜像文件（<code>.iso</code>）</a>。</p>
+<p>在macOS系统下，打开软件<b>启动转换助理（Boot Camp Assistant）</b>，选择Windows 10的安装镜像文件，并调整好分区的大小。然后点“安装”，稍等一会儿，软件会进行一些分区和写入文件的操作，以便重新启动后进入Windows的安装程序。操作完成后，会自动重启电脑。</p>
+<p>重启后就会进入Windows 10安装程序（就像在其他电脑上从U盘启动一样，这里是Boot Camp在硬盘上划了一个分区作为Windows安装程序的分区）。要同意一些协议，但是不需要再配置分区，就直接开始安装Windows 10了。</p>
+<p>过一会儿，安装程序结束，电脑重启，进入安装设置。这里会像普通电脑一样，让我们连接到网络，但是找不到WiFi，因为现在驱动不对，无法使用无线网络。此时要选择“我没有Internet连接”，然后“继续执行有限设置”，先创建本地账户，等后面安装好驱动了再登录微软账号。</p>
+<h2 id="安装驱动"><a href="#安装驱动" class="headerlink" title="安装驱动"></a>安装驱动</h2><p>进入Windows桌面后，还不能正常地使用，因为此时还有一些必要的驱动需要安装。安装驱动前，无法使用WiFi，TouchBar也无法使用（不亮）。</p>
+<p>此时，打开D盘（就是那个Windows安装镜像文件分区）里的<code>BootCamp</code>文件夹，运行其中的<code>Setup.exe</code>，就会开始安装驱动，安装完后重启。</p>
+<p>驱动装好之后，就可以正常连接无线网了，TouchBar也可以正常使用了（平时显示一些虚拟控制按键，如屏幕亮度、键盘亮度、媒体播放、音量等，按住MacBook自带键盘的<kbd>Fn</kbd>键就能转换成<kbd>F1</kbd>~<kbd>F12</kbd>了）。</p>
+<p>在连接WiFi之后，就可以登录微软账号了。</p>
+<h2 id="启动选择"><a href="#启动选择" class="headerlink" title="启动选择"></a>启动选择</h2><p>在开机时按住<kbd>Option</kbd>键或<kbd>Alt</kbd>键，就能选择要启动的操作系统，类似于其他电脑上的<kbd>Esc</kbd>或<kbd>F12</kbd>的效果。</p>
+<p>跟其他电脑一样，启动项是有顺序的，有一个固定的默认启动项，并不是每次重启都会默认启动上次的系统。这个默认启动项可以在操作系统中手动设置，而不是在BIOS界面中。</p>
+<p>在macOS中的“系统偏好设置” &gt; “启动磁盘”中，先解锁，然后用鼠标点击要设置为默认的启动项即可。看到提示“您已选择了XXX”，就表示这个XXX已经是这台MacBook的默认启动操作系统了。如图（这界面，不查资料鬼知道它是这个功能）：</p>
+<img src="/2020/09/11/install-the-second-os-windows-10-on-macbook/set-default-boot-in-macos.png" class="" title="在macOS中设置默认启动项">
+
+<p>在安装完Windows时，默认启动项已经被设置成了Windows，如果还是想以macOS作为默认启动项，就在macOS中这样设置即可。在Windows中，Boot Camp也提供了这样的功能，但是在Windows中默认情况下看不见macOS的分区，所以无法直接设置。</p>
+<h2 id="更多细节"><a href="#更多细节" class="headerlink" title="更多细节"></a>更多细节</h2><p>在安装完驱动重启后，再进入Windows时，就发现此时D盘已经不见了，因为已经不需要了。不过此时在磁盘管理工具中还是能看见这个分区，只不过没有分配盘符。</p>
+<p>第一次切换回macOS时（需要通过<kbd>Option</kbd>或<kbd>Alt</kbd>），在选择启动项时，会发现有两个“Windows”，第一个是已经安装好的Windows操作系统，第二个则是那个Windows安装程序的分区（此时它在Windows中没有分配盘符，但分区仍然存在）。在启动一次macOS后，这个分区就会被启动转换助理移除，下一次这个启动项就没有了。</p>
+<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>微软账户登不上，<a target="_blank" rel="noopener" href="https://blog.csdn.net/u013468614/article/details/103363477">MSA错误</a>（坑爹的无退出界面设计，死循环），登录界面不显示；OneDrive也登录不上，登录界面不显示。</p>
+<p>猜想是网络的问题，因为Steam的云同步也是半天动不了，白天再试试。</p>
+<p>果然白天好多了，起码能看见登录界面了（这坑爹的民用宽带），还是有卡住的情况，换了个DNS就一切都好了。</p>
+<p>果然涉及到国外网络服务的事情，还是白天做比较好。</p>
+<h2 id="惊喜"><a href="#惊喜" class="headerlink" title="惊喜"></a>惊喜</h2><p>可能是新装的系统，Windows的流畅度比macOS还要顺滑。</p>
+<p>游戏方面，居然能够比较流畅（可能我对于流畅的预期没有那么高）地运行<b>尘埃3（DiRT 3 Complete Edition）</b>和<b><a target="_blank" rel="noopener" href="https://store.steampowered.com/app/489830/The_Elder_Scrolls_V_Skyrim_Special_Edition/">上古卷轴5（The Elder Scrolls V: Skyrim Special Edition）</a></b>（都是十年前的游戏，这台电脑没有独显）。</p>
+<p>这让我对个人电脑的性能认识有了一次极大的矫正。</p>
+<h2 id="移除Windows-10"><a href="#移除Windows-10" class="headerlink" title="移除Windows 10"></a>移除Windows 10</h2><p>如果这个Windows 10系统不想要了，也可以很方便地从电脑里移除（注意转移或备份Windows分区中的重要数据），将分配给它的磁盘空间再重新归还给macOS。</p>
+<p>移除Windows也是通过macOS中的“启动转换助理”软件进行。打开“启动转换助理”，点“恢复”，通过指纹或者密码授权，即开始删除Windows分区，并将磁盘空间合并到macOS的分区中。</p>
+<img src="/2020/09/11/install-the-second-os-windows-10-on-macbook/ready-to-remove-windows.png" class="" title="准备移除Windows">
+
+<img src="/2020/09/11/install-the-second-os-windows-10-on-macbook/removing-windows.png" class="" title="正在移除Windows">
+
+<img src="/2020/09/11/install-the-second-os-windows-10-on-macbook/windows-has-been-removed.png" class="" title="Windows已被移除">
+
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/boot-camp">Apple支持 - 启动转换支持</a></li>
+<li><a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/HT201468">Apple支持 - 在Mac上通过“启动转换助理”安装 Windows 10</a></li>
+</ul>
+<hr>
+<blockquote>
+<p><strong>TODO</strong>：</p>
+<ol>
+<li>这次没截图，下次再安装的时候截个图补到这里。</li>
+<li>再折腾折腾，三系统同机不是梦啊。</li>
+</ol>
+</blockquote>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://yadelei.cn/2020/09/11/install-the-second-os-windows-10-on-macbook/" data-id="ckk24lky1000b8zjp60vnaw5g" data-title="在MacBook上安装Windows 10双系统" class="article-share-link">分享</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mac/" rel="tag">Mac</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Windows-10/" rel="tag">Windows 10</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/10/05/experiences-for-several-free-pdf-viewers-on-ipad/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">前一篇</strong>
+      <div class="article-nav-title">
+        
+          iPad上几款免费PDF阅读器软件的使用体验
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/07/03/can-not-set-resolution-for-kde-in-virtual-machine/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title">无法在虚拟机中设置KDE的分辨率</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E4%B8%AA%E4%BA%BA/">个人</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%93%B2%E5%AD%A6/">哲学</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/">计算机</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">操作系统</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Linux/">Linux</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Windows-10/">Windows 10</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/macOS/">macOS</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/">软件使用</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/iOS/">iOS</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/">软件开发</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AF%BB%E4%B9%A6/">读书</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AF%BB%E4%B9%A6/%E6%96%B9%E6%B3%95%E5%AD%A6/">方法学</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%9F%B3%E4%B9%90/">音乐</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%9F%B3%E4%B9%90/%E9%9F%B3%E4%B9%90%E5%8D%B0%E8%B1%A1/">音乐印象</a></li></ul></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/HiDPI/" rel="tag">HiDPI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/KDE/" rel="tag">KDE</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/" rel="tag">Linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/" rel="tag">Mac</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PDF/" rel="tag">PDF</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Ubuntu/" rel="tag">Ubuntu</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Windows-10/" rel="tag">Windows 10</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iPad/" rel="tag">iPad</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/macOS/" rel="tag">macOS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%B8%96%E7%95%8C%E8%A7%82/" rel="tag">世界观</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/" rel="tag">个人网站</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%86%B3%E5%AE%9A%E8%AE%BA/" rel="tag">决定论</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%88%86%E8%BE%A8%E7%8E%87/" rel="tag">分辨率</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag">博客</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9B%BE%E4%B9%A6/" rel="tag">图书</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%B9%BF%E5%91%8A/" rel="tag">广告</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BC%95%E6%B5%81/" rel="tag">引流</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BA%AF%E9%9F%B3%E4%B9%90/" rel="tag">纯音乐</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%8A%B1%E9%97%B4%E6%A2%A6%E4%BA%8B/" rel="tag">花间梦事</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/" rel="tag">虚拟机</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%BD%AF%E4%BB%B6/" rel="tag">软件</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/HiDPI/" style="font-size: 10px;">HiDPI</a> <a href="/tags/KDE/" style="font-size: 10px;">KDE</a> <a href="/tags/Linux/" style="font-size: 20px;">Linux</a> <a href="/tags/Mac/" style="font-size: 20px;">Mac</a> <a href="/tags/PDF/" style="font-size: 20px;">PDF</a> <a href="/tags/Ubuntu/" style="font-size: 10px;">Ubuntu</a> <a href="/tags/Windows-10/" style="font-size: 10px;">Windows 10</a> <a href="/tags/iPad/" style="font-size: 10px;">iPad</a> <a href="/tags/macOS/" style="font-size: 10px;">macOS</a> <a href="/tags/%E4%B8%96%E7%95%8C%E8%A7%82/" style="font-size: 10px;">世界观</a> <a href="/tags/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/" style="font-size: 10px;">个人网站</a> <a href="/tags/%E5%86%B3%E5%AE%9A%E8%AE%BA/" style="font-size: 10px;">决定论</a> <a href="/tags/%E5%88%86%E8%BE%A8%E7%8E%87/" style="font-size: 10px;">分辨率</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 10px;">博客</a> <a href="/tags/%E5%9B%BE%E4%B9%A6/" style="font-size: 20px;">图书</a> <a href="/tags/%E5%B9%BF%E5%91%8A/" style="font-size: 10px;">广告</a> <a href="/tags/%E5%BC%95%E6%B5%81/" style="font-size: 10px;">引流</a> <a href="/tags/%E7%BA%AF%E9%9F%B3%E4%B9%90/" style="font-size: 10px;">纯音乐</a> <a href="/tags/%E8%8A%B1%E9%97%B4%E6%A2%A6%E4%BA%8B/" style="font-size: 10px;">花间梦事</a> <a href="/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/" style="font-size: 10px;">虚拟机</a> <a href="/tags/%E8%BD%AF%E4%BB%B6/" style="font-size: 10px;">软件</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">十月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">九月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">七月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/06/">六月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">四月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/10/11/my-noting-standards-for-physical-books/">我的读书笔记标准规范（实体书版）</a>
+          </li>
+        
+          <li>
+            <a href="/2020/10/11/my-noting-standards-for-pdf-books/">我的读书笔记标准规范（PDF图书版）</a>
+          </li>
+        
+          <li>
+            <a href="/2020/10/09/simple-analysis-for-a-webmaster-oriented-advertisement-push-system/">对一种面向网站主的广告推送系统的简单分析</a>
+          </li>
+        
+          <li>
+            <a href="/2020/10/05/experiences-for-several-free-pdf-viewers-on-ipad/">iPad上几款免费PDF阅读器软件的使用体验</a>
+          </li>
+        
+          <li>
+            <a href="/2020/09/11/install-the-second-os-windows-10-on-macbook/">在MacBook上安装Windows 10双系统</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2021 亚德雷<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>对一种面向网站主的广告推送系统的简单分析 | 亚德雷</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="这两天，我从百度统计的报表中发现，我的网站有一批来源比较奇怪的访问，竟然让我这破网站一天PV数达到了惊人的10个，足足10个呀！（手动捂脸）   稍微看一下这些访问记录就很容易知道，我这是被人推送广告了。这些访问的背后，可以理解为是一种面向站长的广告推送系统在运作。既然碰上了，我就来从这几个数据做一个反推，来简单分析一下这种系统，还是有点意思的。 广告推送原理以下将广告推送的目标网站称为目标网站，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="对一种面向网站主的广告推送系统的简单分析">
+<meta property="og:url" content="https://yadelei.cn/2020/10/09/simple-analysis-for-a-webmaster-oriented-advertisement-push-system/index.html">
+<meta property="og:site_name" content="亚德雷">
+<meta property="og:description" content="这两天，我从百度统计的报表中发现，我的网站有一批来源比较奇怪的访问，竟然让我这破网站一天PV数达到了惊人的10个，足足10个呀！（手动捂脸）   稍微看一下这些访问记录就很容易知道，我这是被人推送广告了。这些访问的背后，可以理解为是一种面向站长的广告推送系统在运作。既然碰上了，我就来从这几个数据做一个反推，来简单分析一下这种系统，还是有点意思的。 广告推送原理以下将广告推送的目标网站称为目标网站，">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://yadelei.cn/2020/10/09/simple-analysis-for-a-webmaster-oriented-advertisement-push-system/access-records.jpg">
+<meta property="og:image" content="https://yadelei.cn/2020/10/09/simple-analysis-for-a-webmaster-oriented-advertisement-push-system/model.png">
+<meta property="og:image" content="https://yadelei.cn/2020/10/09/simple-analysis-for-a-webmaster-oriented-advertisement-push-system/advertisement-type-link.jpg">
+<meta property="og:image" content="https://yadelei.cn/2020/10/09/simple-analysis-for-a-webmaster-oriented-advertisement-push-system/advertisement-type-message.jpg">
+<meta property="og:image" content="https://yadelei.cn/2020/10/09/simple-analysis-for-a-webmaster-oriented-advertisement-push-system/statistical-statement-for-external-links.jpg">
+<meta property="og:image" content="https://yadelei.cn/2020/10/09/simple-analysis-for-a-webmaster-oriented-advertisement-push-system/statistical-statement-for-search-keywords.jpg">
+<meta property="article:published_time" content="2020-10-09T15:24:14.000Z">
+<meta property="article:modified_time" content="2020-10-11T16:07:06.000Z">
+<meta property="article:author" content="亚德雷">
+<meta property="article:tag" content="引流">
+<meta property="article:tag" content="广告">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://yadelei.cn/2020/10/09/simple-analysis-for-a-webmaster-oriented-advertisement-push-system/access-records.jpg">
+  
+    <link rel="alternate" href="/atom.xml" title="亚德雷" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">亚德雷</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">深爱，止礼，赴京，守株。</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS 订阅"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://yadelei.cn"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-simple-analysis-for-a-webmaster-oriented-advertisement-push-system" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2020/10/09/simple-analysis-for-a-webmaster-oriented-advertisement-push-system/" class="article-date">
+  <time class="dt-published" datetime="2020-10-09T15:24:14.000Z" itemprop="datePublished">2020-10-09</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/">计算机</a>►<a class="article-category-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/">软件开发</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      对一种面向网站主的广告推送系统的简单分析
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>这两天，我从百度统计的报表中发现，我的网站有一批来源比较奇怪的访问，竟然让我这破网站一天PV数达到了惊人的10个，足足10个呀！（手动捂脸）</p>
+<p><img src="/2020/10/09/simple-analysis-for-a-webmaster-oriented-advertisement-push-system/access-records.jpg" class="" title="访问记录"></p>
+
+<p>稍微看一下这些访问记录就很容易知道，我这是被人推送广告了。这些访问的背后，可以理解为是一种面向站长的广告推送系统在运作。既然碰上了，我就来从这几个数据做一个反推，来简单分析一下这种系统，还是有点意思的。</p>
+<h2 id="广告推送原理"><a href="#广告推送原理" class="headerlink" title="广告推送原理"></a>广告推送原理</h2><p>以下将广告推送的目标网站称为<strong>目标网站</strong>，目标网站的所有者为<strong>目标站主</strong>，目标站主能够查看目标网站的统计数据（通过网站自带的统计功能或接入的第三方统计服务平台）。发起广告推送的一方称为<strong>广告商</strong>，广告商通过这种面向网站主的<strong>广告推送系统</strong>来向目标站主传达广告信息。</p>
+<p><img src="/2020/10/09/simple-analysis-for-a-webmaster-oriented-advertisement-push-system/model.png" class="" title="模型"></p>
+
+<p>数据统计是广告商将广告信息推送到目标站主的渠道。当广告商检测到目标网站开启了统计功能时（如接入了诸如百度统计、CNZZ等统计组件），就可以通过对目标网站进行访问，产生统计数据，从而把自己的广告信息发送给能看到目标网站统计数据的人，即目标站主。</p>
+<p>广告信息被包含在访问的来源信息中。这个来源信息，可以直接设置在HTTP Request中Header的<code>Referer</code>字段中，当页面中的统计组件被加载时，本次访问的来源信息就被记录到统计数据中了。</p>
+<p>从上面的访问记录来看，广告信息主要是以下两种：</p>
+<ul>
+<li><p>链接：可以是广告商承接的对其他网站的链接推广，也可以是广告商自己的链接，一般将<code>Referer</code>字段设置为其他网站的首页网址；</p>
+<p><img src="/2020/10/09/simple-analysis-for-a-webmaster-oriented-advertisement-push-system/advertisement-type-link.jpg" class="" title="广告类型：链接"></p>
+</li>
+<li><p>文字消息：可以是广告商对自己的服务内容、联系方式的描述，也可以是其他任何性质的文字信息，一般将<code>Referer</code>字段设置为某个搜索引擎的搜索结果页，其中文字信息就是搜索词。</p>
+<p><img src="/2020/10/09/simple-analysis-for-a-webmaster-oriented-advertisement-push-system/advertisement-type-message.jpg" class="" title="广告类型：文字消息"></p>
+
+</li>
+</ul>
+<p>这些被有意设置的广告信息，会随着访问目标网站而产生的统计数据，被推送给目标站主。目标站主在数据统计界面中，能够看到这些信息。</p>
+<p><img src="/2020/10/09/simple-analysis-for-a-webmaster-oriented-advertisement-push-system/statistical-statement-for-external-links.jpg" class="" title="统计报表：外链"></p>
+
+<p><img src="/2020/10/09/simple-analysis-for-a-webmaster-oriented-advertisement-push-system/statistical-statement-for-search-keywords.jpg" class="" title="统计报表：搜索关键词"></p>
+
+<h2 id="技术实现猜想"><a href="#技术实现猜想" class="headerlink" title="技术实现猜想"></a>技术实现猜想</h2><ul>
+<li>技术实现上没什么难度，所有的环节基本上都可以实现全自动化。在这里描述的基本系统形态中，广告商可以只需要在添加承接推广的其他网站链接、编写广告文字内容等步骤上有一些人工操作，其他的全部交由机器自动进行。</li>
+<li>广告商首先要在互联网上寻找目标网站，这一步应该有一个类似于爬虫的程序在不停地进行筛选。仅按照本次分析的这种系统基本形态来看，目标网站必须要启用统计组件。可以仅识别像百度统计、CNZZ这种应用最广泛的统计服务组件。另外，筛选的标准还可能会考虑其他的一些因素，比如网站是不是新出现的等等，尽可能将广告的目标受众挑选出来。</li>
+<li>因为网站的统计组件是需要在浏览器前端运行的，所以访问目标网站产生统计数据这一步，应该是采用的调用浏览器内核方案，即通过程序自动调用浏览器内核去进行实际的页面访问和前端执行。访问只需要持续到统计组件将统计数据发送给了后端的统计服务平台即可关闭页面。一般访问目标网站的首页。</li>
+<li>可以看到访问记录中，即使是同一个广告商的访问记录，每次的IP和地域都不一样。猜想这可能是出于安全性考虑，比如防被定位、防被识别为广告等。这需要使用VPN商提供的代理服务。</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://yadelei.cn/2020/10/09/simple-analysis-for-a-webmaster-oriented-advertisement-push-system/" data-id="ckk24lkya000q8zjp6hd85qyy" data-title="对一种面向网站主的广告推送系统的简单分析" class="article-share-link">分享</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%B9%BF%E5%91%8A/" rel="tag">广告</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%BC%95%E6%B5%81/" rel="tag">引流</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/10/11/my-noting-standards-for-pdf-books/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">前一篇</strong>
+      <div class="article-nav-title">
+        
+          我的读书笔记标准规范（PDF图书版）
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/10/05/experiences-for-several-free-pdf-viewers-on-ipad/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title">iPad上几款免费PDF阅读器软件的使用体验</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E4%B8%AA%E4%BA%BA/">个人</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%93%B2%E5%AD%A6/">哲学</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/">计算机</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">操作系统</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Linux/">Linux</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Windows-10/">Windows 10</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/macOS/">macOS</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/">软件使用</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/iOS/">iOS</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/">软件开发</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AF%BB%E4%B9%A6/">读书</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AF%BB%E4%B9%A6/%E6%96%B9%E6%B3%95%E5%AD%A6/">方法学</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%9F%B3%E4%B9%90/">音乐</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%9F%B3%E4%B9%90/%E9%9F%B3%E4%B9%90%E5%8D%B0%E8%B1%A1/">音乐印象</a></li></ul></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/HiDPI/" rel="tag">HiDPI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/KDE/" rel="tag">KDE</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/" rel="tag">Linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/" rel="tag">Mac</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PDF/" rel="tag">PDF</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Ubuntu/" rel="tag">Ubuntu</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Windows-10/" rel="tag">Windows 10</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iPad/" rel="tag">iPad</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/macOS/" rel="tag">macOS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%B8%96%E7%95%8C%E8%A7%82/" rel="tag">世界观</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/" rel="tag">个人网站</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%86%B3%E5%AE%9A%E8%AE%BA/" rel="tag">决定论</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%88%86%E8%BE%A8%E7%8E%87/" rel="tag">分辨率</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag">博客</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9B%BE%E4%B9%A6/" rel="tag">图书</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%B9%BF%E5%91%8A/" rel="tag">广告</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BC%95%E6%B5%81/" rel="tag">引流</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BA%AF%E9%9F%B3%E4%B9%90/" rel="tag">纯音乐</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%8A%B1%E9%97%B4%E6%A2%A6%E4%BA%8B/" rel="tag">花间梦事</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/" rel="tag">虚拟机</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%BD%AF%E4%BB%B6/" rel="tag">软件</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/HiDPI/" style="font-size: 10px;">HiDPI</a> <a href="/tags/KDE/" style="font-size: 10px;">KDE</a> <a href="/tags/Linux/" style="font-size: 20px;">Linux</a> <a href="/tags/Mac/" style="font-size: 20px;">Mac</a> <a href="/tags/PDF/" style="font-size: 20px;">PDF</a> <a href="/tags/Ubuntu/" style="font-size: 10px;">Ubuntu</a> <a href="/tags/Windows-10/" style="font-size: 10px;">Windows 10</a> <a href="/tags/iPad/" style="font-size: 10px;">iPad</a> <a href="/tags/macOS/" style="font-size: 10px;">macOS</a> <a href="/tags/%E4%B8%96%E7%95%8C%E8%A7%82/" style="font-size: 10px;">世界观</a> <a href="/tags/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/" style="font-size: 10px;">个人网站</a> <a href="/tags/%E5%86%B3%E5%AE%9A%E8%AE%BA/" style="font-size: 10px;">决定论</a> <a href="/tags/%E5%88%86%E8%BE%A8%E7%8E%87/" style="font-size: 10px;">分辨率</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 10px;">博客</a> <a href="/tags/%E5%9B%BE%E4%B9%A6/" style="font-size: 20px;">图书</a> <a href="/tags/%E5%B9%BF%E5%91%8A/" style="font-size: 10px;">广告</a> <a href="/tags/%E5%BC%95%E6%B5%81/" style="font-size: 10px;">引流</a> <a href="/tags/%E7%BA%AF%E9%9F%B3%E4%B9%90/" style="font-size: 10px;">纯音乐</a> <a href="/tags/%E8%8A%B1%E9%97%B4%E6%A2%A6%E4%BA%8B/" style="font-size: 10px;">花间梦事</a> <a href="/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/" style="font-size: 10px;">虚拟机</a> <a href="/tags/%E8%BD%AF%E4%BB%B6/" style="font-size: 10px;">软件</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">十月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">九月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">七月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/06/">六月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">四月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/10/11/my-noting-standards-for-physical-books/">我的读书笔记标准规范（实体书版）</a>
+          </li>
+        
+          <li>
+            <a href="/2020/10/11/my-noting-standards-for-pdf-books/">我的读书笔记标准规范（PDF图书版）</a>
+          </li>
+        
+          <li>
+            <a href="/2020/10/09/simple-analysis-for-a-webmaster-oriented-advertisement-push-system/">对一种面向网站主的广告推送系统的简单分析</a>
+          </li>
+        
+          <li>
+            <a href="/2020/10/05/experiences-for-several-free-pdf-viewers-on-ipad/">iPad上几款免费PDF阅读器软件的使用体验</a>
+          </li>
+        
+          <li>
+            <a href="/2020/09/11/install-the-second-os-windows-10-on-macbook/">在MacBook上安装Windows 10双系统</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2021 亚德雷<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

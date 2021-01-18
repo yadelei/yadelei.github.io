@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>亚德雷</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="欢迎你，我的朋友。我是亚德雷，这是我在互联网世界中支起的一角草庐，请稍坐用茶。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="亚德雷">
+<meta property="og:url" content="https://yadelei.cn/page/2/index.html">
+<meta property="og:site_name" content="亚德雷">
+<meta property="og:description" content="欢迎你，我的朋友。我是亚德雷，这是我在互联网世界中支起的一角草庐，请稍坐用茶。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="亚德雷">
+<meta property="article:tag" content="亚德雷,博客">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="亚德雷" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">亚德雷</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">深爱，止礼，赴京，守株。</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS 订阅"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://yadelei.cn"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-ubuntu-1804-hidpi-settings" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2018/06/28/ubuntu-1804-hidpi-settings/" class="article-date">
+  <time class="dt-published" datetime="2018-06-28T13:35:03.000Z" itemprop="datePublished">2018-06-28</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/">计算机</a>►<a class="article-category-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">操作系统</a>►<a class="article-category-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Linux/">Linux</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2018/06/28/ubuntu-1804-hidpi-settings/">Ubuntu 18.04常用软件HiDPI高分屏设置</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>我的电脑是小米笔记本 Air 13.3，分辨率1920x1080（1080P）。这个分辨率在这个尺寸下有点尴尬，日常使用必须将GUI放大（否则界面元素太小，看着累），又不能像苹果Retina屏一样整数倍放大（否则可用界面空间太小，不方便操作）。</p>
+<p>我这台电脑上安装Windows系统时，Windows会自动设置一个缩放率150%，但是安装Linux系统如Ubuntu，就必须手动去设置缩放了。查阅资料后，最终把Ubuntu 18.04下的缩放问题基本解决了。不得不讲，Linux相比Windows对高分屏的支持还是要好不少的，只不过Linux在GUI这块儿派系比较多，所以设置起来可能要考虑多个方面的东西。</p>
+<h2 id="环境和参数"><a href="#环境和参数" class="headerlink" title="环境和参数"></a>环境和参数</h2><table>
+<thead>
+<tr>
+<th align="left">操作系统</th>
+<th align="left">桌面环境</th>
+<th align="left">屏幕分辨率</th>
+<th align="left">屏幕尺寸</th>
+<th align="left">缩放因子</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Ubuntu Desktop 18.04 LTS</td>
+<td align="left">Gnome 3.28.1</td>
+<td align="left">1920x1080</td>
+<td align="left">13.3英寸</td>
+<td align="left">1.33（缩放后相当于1440x810）</td>
+</tr>
+</tbody></table>
+<h2 id="设置方法"><a href="#设置方法" class="headerlink" title="设置方法"></a>设置方法</h2><h3 id="Gnome全局设置"><a href="#Gnome全局设置" class="headerlink" title="Gnome全局设置"></a>Gnome全局设置</h3><p>Ubuntu 18.04使用的是Gnome桌面环境，所以这里的设置方法对其他安装了Gnome桌面环境的发行版也适用。</p>
+<h4 id="不可行方案"><a href="#不可行方案" class="headerlink" title="不可行方案"></a>不可行方案</h4><p>在Gnome的<b>设置</b>中，<b>设备</b> &gt; <b>显示</b> &gt; <b>比例放大</b>下，看到这里只有整数倍的缩放比例，如<code>100%</code>和<code>200%</code>。<code>100%</code>不放大，<code>200%</code>放太大，所以这里并不能满足需求。</p>
+<p><img src="/2018/06/28/ubuntu-1804-hidpi-settings/only-100-200-precent-in-settings.png" class="" title="设置中只有100%和200%的比例"></p>
+
+<p>如果桌面环境运行在Wayland下，则可以开启分数缩放（非整数倍的缩放），方法是运行以下命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gsettings set org.gnome.mutter experimental-features &quot;[&#39;scale-monitor-framebuffer&#39;]&quot;</span><br></pre></td></tr></table></figure>
+
+<p>此时，上图的<b>比例放大</b>处就会出现<code>125%</code>、<code>150%</code>等分数缩放比例。</p>
+<p>注意，这是一个实验特性，只在Wayland下有效，Ubuntu 18.04默认使用的是Xorg而非Wayland，所以必须要先注销账户，然后在登录时选择<b>Ubuntu on Wayland</b>。而且经我测试，这个方案在Ubuntu 18.04上效果不太好，在某些地方（如顶栏）文字和图标的渲染明显不平滑，所以仍然不能满足需求。</p>
+<h4 id="可行方案"><a href="#可行方案" class="headerlink" title="可行方案"></a>可行方案</h4><p>Gnome下真正有效的、通用的方案是，使用<strong>文本缩放因子（Text Scaling Factor）</strong>。放大后的文字都很清晰，其他界面元素也基本都会跟着文字一起放大。</p>
+<p>设置<strong>文本缩放因子</strong>的方法主要有以下几种：</p>
+<ul>
+<li><p>在<b>设置</b> &gt; <b>通用辅助功能</b>下开启<b>大号文本</b>，默认是将文本缩放至**125%**，不可自定义缩放因子（缩放倍数）；<br>同时，也可以在这里将鼠标的<b>光标大小</b>设置为<code>中等</code>，以匹配缩放后的观感；</p>
+<p><img src="/2018/06/28/ubuntu-1804-hidpi-settings/enable-bigger-text-in-settings.png" class="" title="在设置中开启大号文本"></p>
+</li>
+<li><p>在<b>Gnome Tweaks</b>软件的<b>字体</b>中手动设置<b>缩放比例</b>的数值，可以自定义缩放因子，甚至缩小文本都可以；</p>
+<p><img src="/2018/06/28/ubuntu-1804-hidpi-settings/set-factor-in-gnome-tweaks.png" class="" title="在Gnome Tweaks中设置缩放因子"></p>
+</li>
+<li><p>可以使用<code>gsettings</code>命令或<b>dconf系统配置编辑器</b>对<code>org.gnome.desktop.interface text-scaling-factor</code>项设置数值：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gsettings set org.gnome.desktop.interface text-scaling-factor 1.33</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2018/06/28/ubuntu-1804-hidpi-settings/set-factor-in-dconf-editor.png" class="" title="在dconf系统配置编辑器中设置缩放因子"></p>
+
+</li>
+</ul>
+<h3 id="Firefox-Thunderbird设置"><a href="#Firefox-Thunderbird设置" class="headerlink" title="Firefox/Thunderbird设置"></a>Firefox/Thunderbird设置</h3><p>在进行Gnome全局设置后，很多程序就已经能够正常缩放了，但是Mozilla家常用的两个数码宝贝，火狐（Firefox）和雷鸟（Thunderbird）还点问题，具体表现为：程序界面字体正常放大，但是界面比较紧凑，而内容显示区域（网页和邮件内容）并没有放大。</p>
+<p>此时需要对Firefox和Thunderbird进行单独设置，设置的方法都是在<b>配置编辑器（about:config）</b>中修改<code>layout.css.devPixelsPerPx</code>项的值。</p>
+<h4 id="Firefox"><a href="#Firefox" class="headerlink" title="Firefox"></a>Firefox</h4><p>在浏览器的地址栏直接输入<code>about:config</code>，回车即进入<b>配置编辑器</b>。</p>
+<p><img src="/2018/06/28/ubuntu-1804-hidpi-settings/set-factor-in-firefox.png" class="" title="在Firefox中设置缩放因子"></p>
+
+<h4 id="Thunderbird"><a href="#Thunderbird" class="headerlink" title="Thunderbird"></a>Thunderbird</h4><p>在Thunderbird中打开<b>首选项</b>面板，在<b>高级</b>中点击<b>配置编辑器</b>。</p>
+<p>
+<img src="/2018/06/28/ubuntu-1804-hidpi-settings/entry-in-thunderbird.png" class="" title="在Thunderbird中找到配置编辑器">
+<img src="/2018/06/28/ubuntu-1804-hidpi-settings/set-factor-in-thunderbird.png" class="" title="在Thunderbird中设置缩放因子">
+</p>
+
+<h3 id="Qt程序设置"><a href="#Qt程序设置" class="headerlink" title="Qt程序设置"></a>Qt程序设置</h3><p>在进行以上设置后，还有部分Qt程序仍然不能正确进行缩放，此时需要对Qt程序进行缩放因子的设置，设置的方法为：</p>
+<p>编辑文件<code>~/.profile</code>，在文件末尾添加以下内容，然后保存并注销用户，重新登录后Qt程序就能够进行正常缩放了。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># Qt程序缩放因子</span><br><span class="line">export QT_SCALE_FACTOR&#x3D;1.33</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p>以上就是我目前在Ubuntu 18.04 Gnome下常用软件的HiDPI设置，基本上都能够工作得很好，可以满足正常使用。因为这里记录的只是我常用的软件的设置，所以并不全，参考的文档中已经给出了比较全面的解决方案，需要的话可以参考查阅。在这里进行一个记录，日后还有新的需求的话会继续研究并记录在此。</p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://wiki.archlinux.org/index.php/HiDPI_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)">Arch文档：HiDPI</a></li>
+<li><a target="_blank" rel="noopener" href="https://doc.qt.io/qt-5/highdpi.html">Qt文档：High DPI Displays</a></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://yadelei.cn/2018/06/28/ubuntu-1804-hidpi-settings/" data-id="ckk24lkyv00398zjp1e8p78w3" data-title="Ubuntu 18.04常用软件HiDPI高分屏设置" class="article-share-link">分享</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HiDPI/" rel="tag">HiDPI</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Linux/" rel="tag">Linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Ubuntu/" rel="tag">Ubuntu</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+
+
+  <nav id="page-nav">
+    
+    <a class="extend prev" rel="prev" href="/">&laquo; 上一页</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+  </nav>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E4%B8%AA%E4%BA%BA/">个人</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%93%B2%E5%AD%A6/">哲学</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/">计算机</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">操作系统</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Linux/">Linux</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Windows-10/">Windows 10</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/macOS/">macOS</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/">软件使用</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/iOS/">iOS</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/">软件开发</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AF%BB%E4%B9%A6/">读书</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AF%BB%E4%B9%A6/%E6%96%B9%E6%B3%95%E5%AD%A6/">方法学</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%9F%B3%E4%B9%90/">音乐</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%9F%B3%E4%B9%90/%E9%9F%B3%E4%B9%90%E5%8D%B0%E8%B1%A1/">音乐印象</a></li></ul></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/HiDPI/" rel="tag">HiDPI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/KDE/" rel="tag">KDE</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/" rel="tag">Linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/" rel="tag">Mac</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PDF/" rel="tag">PDF</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Ubuntu/" rel="tag">Ubuntu</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Windows-10/" rel="tag">Windows 10</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iPad/" rel="tag">iPad</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/macOS/" rel="tag">macOS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%B8%96%E7%95%8C%E8%A7%82/" rel="tag">世界观</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/" rel="tag">个人网站</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%86%B3%E5%AE%9A%E8%AE%BA/" rel="tag">决定论</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%88%86%E8%BE%A8%E7%8E%87/" rel="tag">分辨率</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag">博客</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9B%BE%E4%B9%A6/" rel="tag">图书</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%B9%BF%E5%91%8A/" rel="tag">广告</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BC%95%E6%B5%81/" rel="tag">引流</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BA%AF%E9%9F%B3%E4%B9%90/" rel="tag">纯音乐</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%8A%B1%E9%97%B4%E6%A2%A6%E4%BA%8B/" rel="tag">花间梦事</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/" rel="tag">虚拟机</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%BD%AF%E4%BB%B6/" rel="tag">软件</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/HiDPI/" style="font-size: 10px;">HiDPI</a> <a href="/tags/KDE/" style="font-size: 10px;">KDE</a> <a href="/tags/Linux/" style="font-size: 20px;">Linux</a> <a href="/tags/Mac/" style="font-size: 20px;">Mac</a> <a href="/tags/PDF/" style="font-size: 20px;">PDF</a> <a href="/tags/Ubuntu/" style="font-size: 10px;">Ubuntu</a> <a href="/tags/Windows-10/" style="font-size: 10px;">Windows 10</a> <a href="/tags/iPad/" style="font-size: 10px;">iPad</a> <a href="/tags/macOS/" style="font-size: 10px;">macOS</a> <a href="/tags/%E4%B8%96%E7%95%8C%E8%A7%82/" style="font-size: 10px;">世界观</a> <a href="/tags/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/" style="font-size: 10px;">个人网站</a> <a href="/tags/%E5%86%B3%E5%AE%9A%E8%AE%BA/" style="font-size: 10px;">决定论</a> <a href="/tags/%E5%88%86%E8%BE%A8%E7%8E%87/" style="font-size: 10px;">分辨率</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 10px;">博客</a> <a href="/tags/%E5%9B%BE%E4%B9%A6/" style="font-size: 20px;">图书</a> <a href="/tags/%E5%B9%BF%E5%91%8A/" style="font-size: 10px;">广告</a> <a href="/tags/%E5%BC%95%E6%B5%81/" style="font-size: 10px;">引流</a> <a href="/tags/%E7%BA%AF%E9%9F%B3%E4%B9%90/" style="font-size: 10px;">纯音乐</a> <a href="/tags/%E8%8A%B1%E9%97%B4%E6%A2%A6%E4%BA%8B/" style="font-size: 10px;">花间梦事</a> <a href="/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/" style="font-size: 10px;">虚拟机</a> <a href="/tags/%E8%BD%AF%E4%BB%B6/" style="font-size: 10px;">软件</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">十月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">九月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">七月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/06/">六月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">四月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/10/11/my-noting-standards-for-physical-books/">我的读书笔记标准规范（实体书版）</a>
+          </li>
+        
+          <li>
+            <a href="/2020/10/11/my-noting-standards-for-pdf-books/">我的读书笔记标准规范（PDF图书版）</a>
+          </li>
+        
+          <li>
+            <a href="/2020/10/09/simple-analysis-for-a-webmaster-oriented-advertisement-push-system/">对一种面向网站主的广告推送系统的简单分析</a>
+          </li>
+        
+          <li>
+            <a href="/2020/10/05/experiences-for-several-free-pdf-viewers-on-ipad/">iPad上几款免费PDF阅读器软件的使用体验</a>
+          </li>
+        
+          <li>
+            <a href="/2020/09/11/install-the-second-os-windows-10-on-macbook/">在MacBook上安装Windows 10双系统</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2021 亚德雷<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
